@@ -76,39 +76,39 @@ body {
   border: 1px solid #DDDDDD;
 }
 
-.card .round-container {
+.card .round-toggle {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 5px;
 }
 
-.card .round-container button {
+.card .round-toggle button {
   background-color: #33B667;
   color: #ffffff;
   border-radius: 5px;
   border: 0;
 }
 
-.card .round-container button {
+.card .round-toggle button {
   width: 30px;
   height: 30px;
 }
 
-.card .round-container button:hover {
+.card .round-toggle button:hover {
   opacity: .9;
   cursor: pointer;
 }
 
-.card .round-container .round-title {
+.card .round-toggle .round-title {
   text-align: center;
 }
 
-.card .round-container label{
+.card .round-toggle label{
   font-weight: bold;
 }
 
-.card .round-container p {
+.card .round-toggle p {
   margin: 0;
   font-weight: 400;
   font-size: 16px;
