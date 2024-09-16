@@ -66,3 +66,50 @@ body {
   font-weight: 400;
   color: #000000;
 }
+
+.card {
+  width: 340px;
+  height: 394px;
+  padding: 25px;
+  gap: 0px;
+  border-radius: 10px;
+  border: 1px solid #DDDDDD;
+}
+
+.card .round-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.card .round-container button {
+  background-color: #33B667;
+  color: #ffffff;
+  border-radius: 5px;
+  border: 0;
+}
+
+.card .round-container button {
+  width: 30px;
+  height: 30px;
+}
+
+.card .round-container button:hover {
+  opacity: .9;
+  cursor: pointer;
+}
+
+.card .round-container .round-title {
+  text-align: center;
+}
+
+.card .round-container label{
+  font-weight: bold;
+}
+
+.card .round-container p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+}
