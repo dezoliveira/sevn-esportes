@@ -69,8 +69,8 @@ body {
 
 .card {
   width: 340px;
-  height: 394px;
-  padding: 25px;
+  /* height: 394px; */
+  padding: 25px 25px 0 25px;
   gap: 0px;
   border-radius: 10px;
   border: 1px solid #DDDDDD;
@@ -112,4 +112,59 @@ body {
   margin: 0;
   font-weight: 400;
   font-size: 16px;
+}
+
+.card .round-list ul {
+  width: 100%;
+  padding: 0;
+}
+
+
+.card .round-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  width: 100%;
+}
+
+.card .round-list label {
+  color: #000000;
+  font-weight: 700;
+}
+
+.card .round-list i,
+.card .round-list hr {
+  color: #DDDDDD;
+}
+
+.card .round-list .team-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card .round-list .team-info label {
+  font-size: 12px;
+}
+
+.card .team-info img {
+  width: 32px;
+  height: 40px;
+}
+
+.card .round-list .score {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.card .round-list .score label {
+  font-size: 15px;
+}
+
+.card .round-list .score label i {
+  font-size: 15px;
 }
