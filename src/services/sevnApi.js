@@ -1,6 +1,8 @@
+const url = import.meta.env.VITE_SEVN_URL
+
 export const getRound = async () => {
   try {
-    const res = await fetch("https://sevn-pleno-esportes.deno.dev/")
+    const res = await fetch(url)
     
     if (res.ok) {
       const data = await res.json()
