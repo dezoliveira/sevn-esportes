@@ -16,6 +16,7 @@ window.addEventListener("load", async () => {
 
       if (counter > 0) {
         renderCard(data, counter--)
+
       }
     })
 
@@ -26,6 +27,7 @@ window.addEventListener("load", async () => {
 
       if (counter < data.length) {
         renderCard(data, counter++)
+        
       }
     })
   }

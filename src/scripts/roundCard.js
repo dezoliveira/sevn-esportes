@@ -1,12 +1,18 @@
-export const renderCard = (rounds, counter) => {
+import { renderGames } from './gamesList'
 
+export const renderCard = (rounds, counter) => {
   let activeRound = counter
 
-  console.log('round', counter)
-
   const roundNumber = document.getElementById("roundNumber")
+  const roundList = document.getElementById("roundList")
   
   for(let i=0; i < activeRound; i++) {
-    roundNumber.textContent = rounds[i].round
+    roundList.innerHTML = ""
+
+    roundNumber.textContent = `Rodada ${rounds[i].round}`
+
+    roundList.innerHTML  += `
+      ${renderGames(rounds[i].games)}
+    `
   } 
 }
