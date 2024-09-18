@@ -8,10 +8,11 @@ export const handleRounds = (data, counter) => {
   roundBack.addEventListener("click", (e) => {
     e.preventDefault()
 
-    if (counter > 0) {
-      counter -= 1
-      renderCard(data, counter)
-    }
+    if (counter <= 1) 
+      return
+
+    counter -= 1
+    renderCard(data, counter)
 
   })
 
@@ -20,10 +21,11 @@ export const handleRounds = (data, counter) => {
     e.preventDefault()
     console.log('roundNext', counter)
 
-    if (counter < data.length) {
-      counter += 1
-      renderCard(data, counter)
-    }
+    if (counter >= data.length)
+      return
+
+    counter += 1
+    renderCard(data, counter)
     
   })
 }
