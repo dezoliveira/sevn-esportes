@@ -1,8 +1,10 @@
 export const renderGames = (games) => {
+  // Template storage var
   let html = ""
 
   html += "<ul>"
 
+  // Loop to get games by round
   for (let g in games) {
     html += `
       <li id="roundItem" class="round-item">
