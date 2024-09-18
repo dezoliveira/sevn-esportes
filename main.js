@@ -16,6 +16,6 @@ window.addEventListener("load", async () => {
 
 // Initialize functions on App
 const initializeApp = (data) => {
-  renderCard(data, counter++)
-  handleRounds(data, counter++)
+  renderCard(data, counter)
+  handleRounds(data, counter)
 }

@@ -5,20 +5,24 @@ const roundNext = document.getElementById("roundNext")
 
 export const handleRounds = (data, counter) => {
   // <= Back Round <=
-  roundBack.addEventListener("click", () => {
+  roundBack.addEventListener("click", (e) => {
+    e.preventDefault()
 
     if (counter > 0) {
-      renderCard(data, counter--)
+      counter -= 1
+      renderCard(data, counter)
     }
 
   })
 
   // => Next Round =>
-  roundNext.addEventListener("click", () => {
+  roundNext.addEventListener("click", (e) => {
+    e.preventDefault()
     console.log('roundNext', counter)
 
     if (counter < data.length) {
-      renderCard(data, counter++)
+      counter += 1
+      renderCard(data, counter)
     }
     
   })
