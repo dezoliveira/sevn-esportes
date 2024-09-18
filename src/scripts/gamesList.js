@@ -12,7 +12,7 @@ export const renderGames = (games) => {
       <li id="roundItem" class="round-item">
         <div id="${games[g].team_away_id}" class="team-info">
           <img
-            src="/public/images/team_shield_base.png"
+            src="/images/team_shield_base.png"
             style="
               filter: opacity(0.5)
               drop-shadow(0 0 0 ${colors(g, "away")});
@@ -30,7 +30,7 @@ export const renderGames = (games) => {
         <div id="${games[g].team_home_id}" class="team-info">
           <label>${games[g].team_home_name}</label>
           <img
-            src="/public/images/team_shield_base.png"
+            src="/images/team_shield_base.png"
             style="
               filter: opacity(0.5)
               drop-shadow(0 0 0 ${colors(g, "home")});
