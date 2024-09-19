@@ -27,7 +27,6 @@ export const handleRounds = (data, counter) => {
   // => Next Round =>
   roundNext.addEventListener("click", (e) => {
     e.preventDefault()
-    console.log('roundNext', counter)
 
     if (counter >= rounds.length)
       return
