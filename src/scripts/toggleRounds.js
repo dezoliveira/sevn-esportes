@@ -3,7 +3,15 @@ import { renderCard } from "./roundCard"
 const roundBack = document.getElementById("roundBack")
 const roundNext = document.getElementById("roundNext")
 
+const localData = localStorage.getItem("data")
+
 export const handleRounds = (data, counter) => {
+  let rounds = data
+
+  if (localData) {
+    rounds = JSON.parse(localData)
+  }
+
   // <= Back Round <=
   roundBack.addEventListener("click", (e) => {
     e.preventDefault()
@@ -12,7 +20,7 @@ export const handleRounds = (data, counter) => {
       return
 
     counter -= 1
-    renderCard(data, counter)
+    renderCard(rounds, counter)
 
   })
 
@@ -21,11 +29,11 @@ export const handleRounds = (data, counter) => {
     e.preventDefault()
     console.log('roundNext', counter)
 
-    if (counter >= data.length)
+    if (counter >= rounds.length)
       return
 
     counter += 1
-    renderCard(data, counter)
+    renderCard(rounds, counter)
     
   })
 }
