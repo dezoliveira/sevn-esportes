@@ -3,6 +3,8 @@ import { getRound } from './src/services/sevnApi'
 import { handleRounds } from './src/scripts/toggleRounds'
 
 const roundCard = document.getElementById("roundCard")
+
+// Initialize local storage data
 const localData = localStorage.getItem("data")
 
 let counter = 1
@@ -14,6 +16,7 @@ window.addEventListener("load", async () => {
   // Initialize app if data exists
   if (data !== undefined) {
 
+    // If local data set value to data
     if (localData) {
       const data = JSON.parse(localData)
       initializeApp(data)
