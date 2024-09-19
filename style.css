@@ -59,7 +59,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* gap: 45px ; */
+  gap: 82px;
 }
 
 .container p {
@@ -67,6 +67,7 @@ body {
   font-weight: 400;
   color: #000000;
   text-align: center;
+  margin: 0;
 }
 
 .card {
@@ -169,4 +170,14 @@ body {
 
 .card .round-list .score label i {
   font-size: 15px;
+}
+
+@media screen and (max-width: 757px) {
+  .container {
+    gap: 0;
+  }
+
+  .container p {
+    margin: auto;
+  }
 }
