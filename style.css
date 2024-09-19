@@ -182,6 +182,6 @@ body {
   }
 
   .container p {
-    margin: auto;
+    margin: revert;
   }
 }
