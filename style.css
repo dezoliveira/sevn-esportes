@@ -79,6 +79,10 @@ body {
   border: 1px solid #DDDDDD;
 }
 
+.card h4 {
+  text-align: center;
+}
+
 .card .round-toggle {
   display: flex;
   align-items: center;
